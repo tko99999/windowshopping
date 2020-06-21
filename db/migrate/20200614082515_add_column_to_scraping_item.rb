@@ -1,4 +1,6 @@
 class AddColumnToScrapingItem < ActiveRecord::Migration[6.0]
-  def change
+  def up
+    t.string :color
+    t.string :category
+    t.sting :image_url
   end
-end
