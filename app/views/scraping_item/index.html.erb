@@ -2,12 +2,12 @@
 <p>Find me in app/views/scraping_item/index.html.erb</p>
 
 <%@scraping_item.each do|element|%>
- <%= element.name %>
+ <%= @scraping_item %>
 <%end%>
-<% @scraping_item do |title| %>
+<% @scraping_item.each do |title| %>
+<%end%>
 
 #画像の表示
 <div>
-<img src="#{<%=@image_path %>>}"
+<img src=”#{<%=@image_path %>}”>
 </div>
-<% end %>
