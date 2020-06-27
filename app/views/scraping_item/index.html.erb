@@ -1,7 +1,12 @@
 
 <%@scraping_item.each do|element|%>
- <p><%= @scraping_item.brandname %></p>
- <p><%= @scraping_item.itemname %></p>
+ <p><%= element.brandname %></p>
+ <p><%= element.category %></p>
+ <p><%= element.itemname %></p>
+ <p><%= element.price %></p>
+ <p><%= element.color %></p>
+ <p><%= element.image_url %></p>
+
 <%end%>
 #画像の表示
 <div>
