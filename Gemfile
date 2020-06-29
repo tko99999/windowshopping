@@ -57,3 +57,5 @@ gem 'mechanize'
 gem 'devise'
 
 gem 'jquery-rails'
+
+gem 'carrierwave'
