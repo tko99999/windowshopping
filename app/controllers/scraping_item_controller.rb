@@ -1,6 +1,6 @@
 class ScrapingItemController < ApplicationController
   def index
-    
+
      #@Veiwに表示させるための定義
      @scraping_item = ScrapingItem.all
 
@@ -13,6 +13,7 @@ class ScrapingItemController < ApplicationController
      scraping_item = ScrapingItem.new
         scraping_item.brandname = elements.inner_text
         scraping_item.save
+
 
      #商品名取得
 
@@ -65,5 +66,10 @@ class ScrapingItemController < ApplicationController
      #スクレイピングしたURLだとVeiwでエラーが出るので
      @image_path = "https://o.imgz.jp/459/42433459/42433459_8_d.jpg"
 
+   end
+
+   def search
+   end
+   def show
    end
 end
