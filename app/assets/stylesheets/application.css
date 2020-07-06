@@ -14,6 +14,6 @@
  *= require_self
  */
 
-.btn-secondary my-2 {
-  background-color: #007bff;
+.lead text-muted {
+  color: #007bff;
 }

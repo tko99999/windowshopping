@@ -26,11 +26,12 @@
 -->
 <html lang="ja">
  <head>
-    <title>WhindowShopping オンラインショッピングを、もっと楽しく。</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="album.css" rel="stylesheet">
+  <title>WhindowShopping オンラインショッピングを、もっと楽しく。</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="album.css" rel="stylesheet">
   <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
   <link rel="stylesheet" href="application.css">
+  <%= favicon_link_tag('favicon.png') %>
  </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -61,7 +62,7 @@
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
       <a href="#" class="navbar-brand d-flex align-items-center">
-        <img src="/assets/logo.png">
+        <img src="/assets/logo.png" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
 
         <strong>WindowShopping.jp</strong>
       </a>
@@ -78,6 +79,7 @@
     <div class="container">
       <h1 class="jumbotron-heading">WindowShopping.jp</h1>
       <p class="lead text-muted">オンラインショッピングを、もっと楽しく。</p>
+      
       <p>
         <input outlined="" placeholder="例 ビックシルエット Tシャツ" value="" data-v-14390293="">
         <a href="#" class="btn btn-secondary my-2">ここは検索ボタンに変更する</a>
