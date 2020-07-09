@@ -56,6 +56,11 @@
   <p>
     <input outlined="" placeholder="例 ビックシルエット Tシャツ" value="" data-v-14390293="">
     <a href="#" class="btn btn-secondary my-2">ここは検索ボタンに変更する</a>
+    <p>検索</p>
+     <%= form_tag(search_path,:method => 'get') do %>
+     <%= text_field_tag :search %>
+     <%= submit_tag 'Search', :name => nil %>
+<% end %>
   </p>
 </div>
 </section>
