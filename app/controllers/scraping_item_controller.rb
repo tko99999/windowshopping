@@ -4,6 +4,11 @@ class ScrapingItemController < ApplicationController
      #@Veiwに表示させるための定義
      @scraping_item = ScrapingItem.all
 
+     #検索フォーム
+     def index
+      @scraping_items = ScrapingItem.paginate(page: params[:page], per_page: 5).search(params[:search])
+     end
+
      #ブランド名取得
      agent = Mechanize.new
      page = agent.get("https://zozo.jp/shop/newbalance/goods-sale/41433459/?did=69286059&rid=1093")
