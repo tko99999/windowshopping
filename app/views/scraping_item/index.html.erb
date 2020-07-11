@@ -13,38 +13,16 @@
 <img src=<%=@image_path %> >
 </div>--->
 
-<header>
-<div class="collapse bg-dark" id="navbarHeader">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 col-md-7 py-4">
-      <h4 class="text-white">About</h4>
-      <p class="text-muted">このサイトはアパレルショップのアイテムを一括でみることができるアグリケーションサイトです。</p>
-    </div>
-    <div class="col-sm-4 offset-md-1 py-4">
-      <h4 class="text-white">お問合わせ</h4>
-      <ul class="list-unstyled">
-        <li><a href="#" class="text-white">Twitter</a></li>
-        <li><a href="#" class="text-white">LINE</a></li>
-        <li><a href="#" class="text-white">Email</a></li>
-      </ul>
-    </div>
+<html lang="ja"><head>
+    <title>WhindowShopping オンラインショッピングを、もっと楽しく(Show)  。</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="album.css" rel="stylesheet">
+  <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+  <div class="container">
+    <span class="skiplink-text">Skip to main content</span>
   </div>
-</div>
-</div>
-<div class="navbar navbar-dark bg-dark shadow-sm">
-<div class="container d-flex justify-content-between">
-  <a href="#" class="navbar-brand d-flex align-items-center">
-    <img src="/assets/logo.png" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-
-    <strong>WindowShopping.jp</strong>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</div>
-</div>
-</header>
+</a>
 
 <main role="main">
 
@@ -55,15 +33,13 @@
 
   <p>
     <input outlined="" placeholder="例 ビックシルエット Tシャツ" value="" data-v-14390293="">
-    <a href="#" class="btn btn-secondary my-2">ここは検索ボタンに変更する</a>
-    <%= form_tag(users_path, :method => "get") do %>
+  
+    <div>
+     <%= form_tag(scraping_item_search_path, :method => "get") do %>
      <%= text_field_tag :search %>
-     <%= submit_tag "Search" ,:カラム名 => nil ,class: "button is-info"%> 
+     <%= submit_tag "検索する" ,:カラム名 => nil ,class: "button is-info"%>
      <% end %>
-
-     <% @scraping_items.each do |user| %>
-
-<% end %>
+    </div>
   </p>
 </div>
 </section>
